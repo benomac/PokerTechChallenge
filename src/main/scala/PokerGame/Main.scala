@@ -11,7 +11,6 @@ object Main extends App {
   val straight = Hand(Card(Nine, Hearts), Card(Jack, Hearts), Card(Queen, Hearts), Card(Ten, Hearts), Card(Eight, Hearts))
   val deck = shuffleDeck
   val gameHands = dealHands(deck)
-  println(deck)
   val player1 = gameHands.p1
   val player2 = gameHands.p2
 

@@ -2,6 +2,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/AceHigh$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/AceHigh$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Six.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Six.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Hand.class[0m
@@ -10,6 +12,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Deck$GameHands.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Five$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Five$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/AceHigh.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/AceHigh.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Main$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Main$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Nine.class[0m
@@ -22,8 +26,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Eight$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Nine$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Nine$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/DetermineWinner.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/DetermineWinner.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Eight.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Eight.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PokerHands.class[0m
@@ -42,8 +44,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Suit$Diamonds$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Three$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Three$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Game.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Game.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PlayAGame$PlayerScores$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/PlayAGame$PlayerScores$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Ace$.class[0m
@@ -54,14 +54,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Seven$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Queen.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Queen.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/test4.sc[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/test4.sc[0m
-[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/DetermineWinner$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/DetermineWinner$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PokerHands$HandRankings.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/PokerHands$HandRankings.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Game$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Game$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PlayAGame$PlayerScores.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/PlayAGame$PlayerScores.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PokerHands$HighestCard$.class[0m
@@ -70,12 +64,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Card.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PokerHands$Pair.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/PokerHands$Pair.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PokerHands$RoyalFlush$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/PokerHands$RoyalFlush$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/test.sc[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/test.sc[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PokerHands$FullHouse.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/PokerHands$FullHouse.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Ten$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Ten$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PokerHands$RoyalFlush.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/PokerHands$RoyalFlush.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Two$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Two$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PokerHands$FourOfAKind.class[0m
@@ -88,10 +86,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Deck$GameHands$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PokerHands$FourOfAKind$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/PokerHands$FourOfAKind$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/DetermineWinner$PlayerScores.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/DetermineWinner$PlayerScores.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/test2.sc[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/test2.sc[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Deck.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Deck.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Seven.class[0m
@@ -118,16 +112,14 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/PokerHands$Straight.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PokerHands$HighestCard.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/PokerHands$HighestCard.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/DetermineWinner$PlayerScores$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/DetermineWinner$PlayerScores$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Five.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Five.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/test3.sc[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/test3.sc[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Deck$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Deck$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PlayAGame.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/PlayAGame.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/AceLow$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/AceLow$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Six$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Six$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Main.class[0m
@@ -154,6 +146,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/Suit$Hearts$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/PokerHands$ThreeOfAKind$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/PokerHands$ThreeOfAKind$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PokerGame/AceLow.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/AceLow.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/King$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/benmcal/ScalaCode/PokerTechChallenge/target/scala-2.13/classes/PokerGame/King$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PokerGame/Suit$Spades$.class[0m

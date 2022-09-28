@@ -197,7 +197,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/Users/benmcal/Library/Java/JavaVirtualMachines/liberica-11.0.14.1",
+                "home": "/Users/benmcal/.sdkman/candidates/java/11.0.14-zulu/zulu-11.jdk/Contents/Home",
                 "options": [
                     "-Duser.dir=/Users/benmcal/ScalaCode/PokerTechChallenge/project"
                 ]

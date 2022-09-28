@@ -1,16 +1,16 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/Deck.scala:35:42: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/Deck.scala:24:42: match may not be exhaustive.[0m
 [0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: List(_), Nil[0m
 [0m[[0m[33mwarn[0m] [0m[0m    val p1 = shuffledDeck.take(10).filter(x => shuffledDeck.indexOf(x) % 2 == 0) match {[0m
 [0m[[0m[33mwarn[0m] [0m[0m                                         ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/Deck.scala:38:42: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/Deck.scala:27:42: match may not be exhaustive.[0m
 [0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: List(_), Nil[0m
 [0m[[0m[33mwarn[0m] [0m[0m    val p2 = shuffledDeck.take(10).filter(x => shuffledDeck.indexOf(x) % 2 != 0) match {[0m
 [0m[[0m[33mwarn[0m] [0m[0m                                         ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/Hand.scala:5:39: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/Hand.scala:5:10: match may not be exhaustive.[0m
 [0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: List(_), Nil[0m
-[0m[[0m[33mwarn[0m] [0m[0m    val printList = this.toSortedList.reverse match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                      ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/PlayAGame.scala:49:5: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    this.toSortedList match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/PlayAGame.scala:50:5: match may not be exhaustive.[0m
 [0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: (_, _)[0m
 [0m[[0m[33mwarn[0m] [0m[0m    (p1, p2) match {[0m
 [0m[[0m[33mwarn[0m] [0m[0m    ^[0m
@@ -26,17 +26,20 @@
 [0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: List(_), Nil[0m
 [0m[[0m[33mwarn[0m] [0m[0m      val straightFlush = handList match {[0m
 [0m[[0m[33mwarn[0m] [0m[0m                          ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/PokerHands.scala:196:9: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/PokerHands.scala:136:24: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: List(_), Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m      val royalFlush = handList match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/PokerHands.scala:236:15: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: List(_), Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m              list match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/PokerHands.scala:244:9: match may not be exhaustive.[0m
 [0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: List(_), Nil[0m
 [0m[[0m[33mwarn[0m] [0m[0m        list match {[0m
 [0m[[0m[33mwarn[0m] [0m[0m        ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/PokerHands.scala:214:9: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: List(_), Nil[0m
-[0m[[0m[33mwarn[0m] [0m[0m        list match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m        ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/PokerHands.scala:222:27: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/benmcal/ScalaCode/PokerTechChallenge/src/main/scala/PokerGame/PokerHands.scala:252:27: match may not be exhaustive.[0m
 [0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: List(_), Nil[0m
 [0m[[0m[33mwarn[0m] [0m[0m        hand.toSortedList.reverse match {[0m
 [0m[[0m[33mwarn[0m] [0m[0m                          ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 2.13.3); re-run with -deprecation for details[0m
 [0m[[0m[33mwarn[0m] [0m[0m11 warnings found[0m
