@@ -136,7 +136,7 @@ object PokerHands {
       val royalFlush = handList match {
         case List(c1, c2, c3, c4, c5) => StraightFlush(Hand(c5, c1, c2, c3, c4))
       }
-      s"Royal Flush, ${royalFlush.hand.c1.print}, " +
+      s"Royal Flush, Ace of ${royalFlush.hand.c1.suit.print}, " +
         s"${royalFlush.hand.c2.print}, " +
         s"${royalFlush.hand.c3.print}, " +
         s"${royalFlush.hand.c4.print}, " +
@@ -232,7 +232,7 @@ object PokerHands {
           case _ => l match {
             case ::(head, tail) if head.cardValue.rank - tail.head.cardValue.rank == 1 =>
               check(l.tail)
-            case ::(_, tail) if tail.last.cardValue == AceLow =>
+            case ::(_, tail) if tail.last.cardValue == Ace =>
               list match {
                 case List(c1, c2, c3, c4, c5) => check(List(Card(AceHigh, c5.suit), c1, c2, c3, c4))
               }
@@ -257,7 +257,7 @@ object PokerHands {
     }
 
     def checkForRoyalFlush(hand: Hand): Option[RoyalFlush] = {
-      if (checkForFlush(hand).isDefined && checkForStraight(hand).isDefined) {
+      if (checkForStraightFlush(hand).isDefined) {
         hand.toSortedList.reverse match {
           case List(c1, c2, c3, c4, c5) if c1.cardValue == King =>
             Some(RoyalFlush(Hand(Card(AceHigh, c5.suit), c1, c2, c3, c4)))

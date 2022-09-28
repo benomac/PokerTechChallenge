@@ -2,13 +2,12 @@ package PokerGame
 
 import PokerGame.Deck.{dealHands, shuffleDeck}
 import PokerGame.PlayAGame._
-import PokerGame.PokerHands.{checkForRoyalFlush, checkForStraight, checkForStraightFlush}
 import PokerGame.Suit.Hearts
 
 
 
 object Main extends App {
-  val royalFlush = Hand(Card(King, Hearts), Card(Jack, Hearts), Card(Queen, Hearts), Card(Ten, Hearts), Card(AceLow, Hearts))
+  val royalFlush = Hand(Card(King, Hearts), Card(Jack, Hearts), Card(Queen, Hearts), Card(Ten, Hearts), Card(Ace, Hearts))
   val straight = Hand(Card(Nine, Hearts), Card(Jack, Hearts), Card(Queen, Hearts), Card(Ten, Hearts), Card(Eight, Hearts))
   val deck = shuffleDeck
   val gameHands = dealHands(deck)

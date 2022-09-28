@@ -8,7 +8,7 @@ case object AceHigh extends CardValue {
   override def rank = 14
 }
 
-case object AceLow extends CardValue {
+case object Ace extends CardValue {
   override def rank = 1
 }
 case object Two extends CardValue {

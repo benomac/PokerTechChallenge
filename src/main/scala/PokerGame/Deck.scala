@@ -7,14 +7,14 @@ import scala.annotation.unused
 
 object Deck {
   val suits: List[Suit] = List(Spades, Clubs, Hearts, Diamonds)
-  val cardValues: List[CardValue] = List(AceLow, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King)
+  val cardValues: List[CardValue] = List(Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King)
 
   val deck: List[Card] = for {
     card <- cardValues
     suit <- suits
   } yield Card(card, suit)
 
-  def shuffleDeck(): List[Card] = {
+  def shuffleDeck: List[Card] = {
     Random.shuffle(deck)
   }
 
