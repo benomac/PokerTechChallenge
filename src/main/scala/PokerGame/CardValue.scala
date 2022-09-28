@@ -4,7 +4,11 @@ trait CardValue {
   def rank: Int
 }
 
-case object Ace extends CardValue {
+case object AceHigh extends CardValue {
+  override def rank = 14
+}
+
+case object AceLow extends CardValue {
   override def rank = 1
 }
 case object Two extends CardValue {

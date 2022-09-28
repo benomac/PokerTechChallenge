@@ -125,6 +125,27 @@ object PokerHands {
     override def toList: List[Card] = handList
   }
 
+  case class RoyalFlush(hand: Hand) extends HandRankings {
+    val handList = hand.toSortedList
+
+    override def handScore: Int = handList.flatMap(c => List(c.cardValue.rank)).sum
+
+    override def handRank: Int = 10
+
+    override def print: String = {
+      val royalFlush = handList match {
+        case List(c1, c2, c3, c4, c5) => StraightFlush(Hand(c5, c1, c2, c3, c4))
+      }
+      s"Royal Flush, ${royalFlush.hand.c1.print}, " +
+        s"${royalFlush.hand.c2.print}, " +
+        s"${royalFlush.hand.c3.print}, " +
+        s"${royalFlush.hand.c4.print}, " +
+        s"${royalFlush.hand.c5.print}"
+    }
+
+    override def toList: List[Card] = handList
+  }
+
   // TODO RoyalFlush
 
 
@@ -200,18 +221,25 @@ object PokerHands {
       } else None
     }
 
+
+
     def checkForStraight(hand: Hand): Option[Straight] = {
       val list = hand.toSortedList.reverse
       @tailrec
-      def check(l: List[Card]): Boolean =
+      def check(l: List[Card]): Boolean = {
         l.length match {
           case 1 => true
           case _ => l match {
-            case ::(head, tail) if (head.cardValue.rank - tail.head.cardValue.rank == 1) =>
+            case ::(head, tail) if head.cardValue.rank - tail.head.cardValue.rank == 1 =>
               check(l.tail)
+            case ::(_, tail) if tail.last.cardValue == AceLow =>
+              list match {
+                case List(c1, c2, c3, c4, c5) => check(List(Card(AceHigh, c5.suit), c1, c2, c3, c4))
+              }
             case _ => false
           }
         }
+      }
       if (check(list)) {
         list match {
           case List(c1, c2, c3, c4, c5) => Some(Straight(Hand(c1, c2, c3, c4, c5)))
@@ -228,4 +256,14 @@ object PokerHands {
         None
     }
 
+    def checkForRoyalFlush(hand: Hand): Option[RoyalFlush] = {
+      if (checkForFlush(hand).isDefined && checkForStraight(hand).isDefined) {
+        hand.toSortedList.reverse match {
+          case List(c1, c2, c3, c4, c5) if c1.cardValue == King =>
+            Some(RoyalFlush(Hand(Card(AceHigh, c5.suit), c1, c2, c3, c4)))
+          case _ => None
+        }
+      } else
+          None
+    }
 }

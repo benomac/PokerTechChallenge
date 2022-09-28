@@ -13,6 +13,7 @@ object PlayAGame {
       checkForStraight(hand),
       checkForFlush(hand),
       checkForStraightFlush(hand),
+      checkForRoyalFlush(hand),
       Some(HighestCard(hand.toSortedList.maxBy(_.cardValue.rank)))
     ).flatten.maxBy(_.handRank)
     val handRank = MaxFromList.handRank
