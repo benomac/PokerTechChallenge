@@ -150,14 +150,14 @@ object PokerHands {
 
 
     @tailrec
-    private def fullHouseOrTwoPair(m: Map[CardValue, List[Card]], count: Int = 0): Int = {
+    def fullHouseOrThreeOfAKind(m: Map[CardValue, List[Card]], count: Int = 0): Int = {
       if (m.isEmpty) count
-      else if (m.head._2.length == 2 || m.head._2.length == 3) fullHouseOrTwoPair(m.tail, count + 1)
-      else fullHouseOrTwoPair(m.tail, count)
+      else if (m.head._2.length == 2 || m.head._2.length == 3) fullHouseOrThreeOfAKind(m.tail, count + 1)
+      else fullHouseOrThreeOfAKind(m.tail, count)
     }
 
     @tailrec
-    private def getTwoPairs(m: Map[CardValue, List[Card]], acc: List[Pair] = Nil): HandRankings = {
+    def getTwoPairs(m: Map[CardValue, List[Card]], acc: List[Pair] = Nil): HandRankings = {
       if (m.isEmpty) TwoPairs(acc.head, acc.last)
       else if (m.head._2.length == 2) {
         val c1 = m.head._2.head
@@ -168,7 +168,7 @@ object PokerHands {
     }
 
     @tailrec
-    private def getTheFullHouse(m: Map[CardValue, List[Card]], pair: List[Pair] = Nil, three: List[ThreeOfAKind] = Nil): FullHouse = { // not safe
+    def getTheFullHouse(m: Map[CardValue, List[Card]], pair: List[Pair] = Nil, three: List[ThreeOfAKind] = Nil): FullHouse = { // not safe
       if (m.isEmpty) {
         FullHouse(three.head, pair.head)
       }
@@ -191,16 +191,15 @@ object PokerHands {
 
     def checkForMultiples(hand: Hand): Option[HandRankings] = {
       val handMap: Map[CardValue, List[Card]] = hand.toSortedList.groupBy(c => c.cardValue)
-
       val theMultiple = handMap.valuesIterator.reduceLeft((x, y) => if (x.length > y.length) x else y).head.cardValue
 
       val m = handMap(theMultiple)
-
+      println(10)
       handMap.size match {
         case 4 => Some(Pair(m.head, m.last))
-        case 3 if fullHouseOrTwoPair(handMap) != 2 => Some(ThreeOfAKind(m.head, m(1), m.last))
+        case 3 if fullHouseOrThreeOfAKind(handMap) != 2 => Some(ThreeOfAKind(m.head, m(1), m.last))
         case 3 => Some(getTwoPairs(handMap))
-        case 2 if fullHouseOrTwoPair(handMap) == 2 => Some(getTheFullHouse(handMap))
+        case 2 if fullHouseOrThreeOfAKind(handMap) == 2 => Some(getTheFullHouse(handMap))
         case 2 => Some(FourOfAKind(m.head, m(1), m(2), m.last))
         case _ => Some(getHighestCard(hand.toSortedList))
       }
@@ -224,15 +223,19 @@ object PokerHands {
 
 
     def checkForStraight(hand: Hand): Option[Straight] = {
+      println(11)
       val list = hand.toSortedList.reverse
       @tailrec
       def check(l: List[Card]): Boolean = {
+        println(12)
         l.length match {
           case 1 => true
           case _ => l match {
             case ::(head, tail) if head.cardValue.rank - tail.head.cardValue.rank == 1 =>
-              check(l.tail)
-            case ::(_, tail) if tail.last.cardValue == Ace =>
+              println(s"$l 1st")
+              check(tail)
+            case ::(head, tail) if head.cardValue == King =>
+              println(s"$l 2nd")
               list match {
                 case List(c1, c2, c3, c4, c5) => check(List(Card(AceHigh, c5.suit), c1, c2, c3, c4))
               }
